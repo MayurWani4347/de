@@ -1,0 +1,36 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 4rem;
+    max-width: 700px;
+    font-weight: 900;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: #3498db; /* Optional: Change the color of "Rivi" */
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3rem; /* Reduce font size on medium screens */
+      margin-top: 50px; /* Reduce top margin */
+      margin-bottom: 50px; /* Reduce bottom margin */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.5rem; /* Further reduce font size for small screens */
+      margin-top: 30px; /* Reduce top margin for small screens */
+      margin-bottom: 30px; /* Reduce bottom margin for small screens */
+    }
+  }

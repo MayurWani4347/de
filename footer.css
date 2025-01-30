@@ -1,0 +1,126 @@
+.footer-container {
+  background-color: #fff;
+  color: rgb(29, 27, 27);
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer-top h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-top p {
+  font-size: 1rem;
+  color: rgb(99, 95, 95); /* Light text color for address */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between; /* Spacing between sections */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  gap: 50px;
+}
+
+.footer-section {
+  text-align: left;
+  margin-bottom: 20px;
+  width: 45%; /* Set the width of the section to be 45% on larger screens */
+}
+
+.footer-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  font-size: 1.1rem;
+  color: rgb(85, 80, 80); /* Light text color for links */
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #fff; /* Highlight on hover */
+  text-decoration: underline;
+}
+
+.demo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+    gap: 30px; /* Reduce gap between sections */
+  }
+
+  .footer-section {
+    width: 80%; /* Ensure each section takes up more space on smaller screens */
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem; /* Smaller font size for section titles */
+  }
+
+  .footer-section ul li {
+    font-size: 1rem; /* Smaller font size for list items */
+  }
+}
+
+/* Responsive design for small screens (phones) */
+@media (max-width: 480px) {
+  .footer-container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    padding: 40px 20px; /* Adjust padding for small screens */
+  }
+
+  .footer-top h2 {
+    font-size: 2rem; /* Increase font size for smaller screens */
+  }
+
+  .footer-top p {
+    font-size: 1.7rem; /* Adjust font size for the address */
+  }
+
+  .footer-links {
+    flex-direction: row; /* Align sections in 2 columns */
+    gap: 20px;
+  }
+
+  .footer-section {
+    width: 100%; /* Set the width to 45% for 2-column layout */
+    /* margin: 0; */
+  }
+
+  .footer-section h3 {
+    font-size: 2rem; /* Smaller font size for section titles */
+  }
+
+  .footer-section ul li {
+    font-size: 1.7rem; /* Smaller font size for list items */
+  }
+
+  .demo {
+    height: 40px;
+    width: 40px; /* Resize logo image for small screens */
+  }
+}

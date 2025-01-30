@@ -1,0 +1,139 @@
+.scroll-change-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  padding: 20px;
+  flex-direction: column;
+
+}
+
+.text-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  max-width: 100%;
+  height: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-height: 50vh;
+  overflow: hidden;
+  background-color: white; 
+}
+
+
+.text-image-section.third-content {
+  background-color: black;
+  color: white;
+}
+
+
+.left-text {
+  flex: 1;
+  margin-left: 180px;
+  margin-right: 190px;
+  text-align: left;
+  overflow-y: auto;
+  max-height: 90vh;
+  color: inherit; 
+}
+
+
+.left-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: skyblue;
+  line-height: 1.5;
+}
+
+
+.right-image {
+  flex: 1;
+  text-align: right;
+  overflow-y: auto;
+}
+
+.right-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  transition: opacity 0.3s ease;
+  object-fit: cover;
+}
+
+
+.right-image {
+  max-width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .scroll-change-container {
+    height: auto;
+    padding: 15px;
+  }
+
+  .text-image-section {
+    flex-direction: column;
+    height: auto; 
+    align-items: center;
+  }
+
+  .left-text {
+    margin: 10px 0;
+    text-align: center;
+    max-height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .left-text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .right-image {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .right-image img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* Extra small mobile devices (phones in portrait mode) */
+@media screen and (max-width: 480px) {
+  .scroll-change-container {
+    padding: 10px;
+    height: auto;
+  }
+
+  .text-image-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left-text h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .right-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

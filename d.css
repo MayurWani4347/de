@@ -1,0 +1,57 @@
+/* Container for the video section */
+.video-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Heading styling */
+  .headi {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+ 
+  /* Video player styling */
+  .video-player {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  /* Responsive for tablets */
+  @media (max-width: 768px) {
+    .headi{
+      font-size: 1.8rem;
+    }
+  
+    .video-player {
+      max-width: 600px;
+    }
+  }
+  
+  /* Responsive for mobile devices */
+  @media (max-width: 480px) {
+    .headi h1{
+      font-size: 1rem;
+    }
+  
+    .video-player {
+      max-width: 100%;
+    }
+  }
+  
